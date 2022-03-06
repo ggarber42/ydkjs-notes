@@ -7,7 +7,7 @@ describe('Compairson', () => {
           const dayEnd = '17:45'
      })
 
-     it('returns a boolean', () => {
+     it('always returns a boolean', () => {
           expect(typeof compairson('7:00', 15)).toBe('boolean')
      })
 
@@ -17,4 +17,6 @@ describe('Compairson', () => {
      it('returns true if the meeting is at daystart', () => {
           expect(compairson('7:30', 15)).toBe(true)
      })
+
+     it.todo('returns false if the meeting is at end day')
 })
